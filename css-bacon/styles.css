@@ -1,6 +1,25 @@
+/*............Tag Selector............. */
 h1{
     color: #B983FF;
 }
-img{
-    background-color: red;
+img:hover{
+    background-color:darkorange;
+}
+
+/* ..............Class Selector........*/
+.developer {
+    background-color:crimson;
+}
+
+.broccoli {
+    background-color: blue;
+}
+
+.circle {
+    border-radius: 50px;
+}
+
+/* .............ID Selector........... */
+#heading {
+    color:cyan;
 }
