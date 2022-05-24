@@ -1,8 +1,20 @@
 /*........element selector......... */
 h1 {
-    margin-top: 0;
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 562.5%;
 
 }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body{
     margin: 0;
     text-align: center;
@@ -13,20 +25,6 @@ body{
     background-color: #E4F9F5;
     position: relative;
     padding-top: 100px;
-}
-
-/*...........ID selector.................. */
-.middle-container {
-    background-color: red;
-    height: 200px;
-    width: 200px;
-}
-
-.bottom-container {
-    background-color: blue;
-    height: 200px;
-    width: 200px;
-    display: block;
 }
 
 .bottom-cloud {
@@ -40,3 +38,20 @@ body{
     top: 50px;
     
 }
+
+.skill-giphy-img {
+    position : relative;
+
+    
+}
+
+
+/*...........ID selector.................. */
+/* .middle-container {
+    
+}
+
+.bottom-container {
+    
+} */
+
