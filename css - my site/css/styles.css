@@ -3,16 +3,24 @@ h1 {
     margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
     font-size: 562.5%;
+    color: #66BFBF;
 
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: normal;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+a {
+    color: #11999E;
 }
 
 body{
@@ -20,9 +28,18 @@ body{
     text-align: center;
     font-family: 'Merriweather', serif;
 }
+
+hr {
+    border: none;
+    border-top-style: dotted;
+    width: 5%;
+    border-width: 5px;
+    border-color: gray;
+    
+}
 /* ........class tag........... */
 .top-container {
-    background-color: #E4F9F5;
+    background-color: #EAF6F6;
     position: relative;
     padding-top: 100px;
 }
@@ -39,11 +56,32 @@ body{
     
 }
 
-.skill-giphy-img {
-    position : relative;
+.profile-para {
+    color: #40514E;
+}
 
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+
+}
+
+.skill-giphy-img {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
     
 }
+
+.skill-blogger-img {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+    
+}
+
 
 
 /*...........ID selector.................. */
