@@ -131,7 +131,7 @@ hr {
 
 .footer-link{
     color: #11999E;
-    line-height: 2;
+    /* line-height: 2; */
     padding: 10px;
 }
 
