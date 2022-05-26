@@ -32,21 +32,30 @@ body{
 hr {
     border: none;
     border-top-style: dotted;
-    width: 3%;
+    width: 4%;
     border-width: 7px;
     border-color: #EAF6F6;
+    margin: 100px auto;
     
+}
+
+p {
+    line-height: 2;
+}
+
+a:hover{
+    color: #EAF6F6;
 }
 /* ........class tag........... */
 .top-container {
     background-color: #EAF6F6;
     position: relative;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .bottom-cloud {
     position: absolute;
-    left: 300px;
+    left: 250px;
     bottom: 300px;
 }
 .top-cloud {
@@ -56,15 +65,21 @@ hr {
     
 }
 
+.middle-container {
+    margin: 100px 0;
+}
+
 .profile-para {
     color: #40514E;
+    width: 30%;
+    margin: auto;
 }
 
 .skill-row {
     width: 50%;
     margin: 100px auto 100px auto;
     text-align: left;
-    line-height: 2;
+    
 
 }
 
@@ -119,11 +134,12 @@ hr {
 
 .contact-me-touch {
     margin: 50px auto 50px auto;
+    width: 40%;
 }
 
 .bottom-container {
     background-color: #66BFBF;
-    padding: 35px;
+    padding: 50px 0 20px ;
     margin-top: 5%;
     
     
@@ -132,17 +148,24 @@ hr {
 .footer-link{
     color: #11999E;
     /* line-height: 2; */
-    padding: 10px;
+    padding: 30px;
+    text-decoration: solid;
+    font-family: 'Merriweather' serif;
 }
+
+
 
 .copyright {
     color: #EAF6F6;
+    padding: 20px 0;
 }
 
-/*...........ID selector.................. */
-/* .middle-container {
-    
+.payal-copyright {
+    text-decoration: none;
+    color: #EAF6F6;
 }
+/*...........ID selector.................. */
+
 
 
 
