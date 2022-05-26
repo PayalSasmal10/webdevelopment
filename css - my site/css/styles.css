@@ -32,9 +32,9 @@ body{
 hr {
     border: none;
     border-top-style: dotted;
-    width: 5%;
-    border-width: 5px;
-    border-color: gray;
+    width: 3%;
+    border-width: 7px;
+    border-color: #EAF6F6;
     
 }
 /* ........class tag........... */
@@ -113,10 +113,31 @@ hr {
 
 }
 
+.contact-me {
+    margin: 50px auto 50px auto;
+}
+
+.contact-me-touch {
+    margin: 50px auto 50px auto;
+}
+
 .bottom-container {
+    background-color: #66BFBF;
+    padding: 35px;
+    margin-top: 5%;
     
     
 } 
+
+.footer-link{
+    color: #11999E;
+    line-height: 2;
+    padding: 10px;
+}
+
+.copyright {
+    color: #EAF6F6;
+}
 
 /*...........ID selector.................. */
 /* .middle-container {
