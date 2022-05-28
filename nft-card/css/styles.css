@@ -17,27 +17,24 @@ body {
 }
 
 .outer-div {
-  width: 80vw;
+  width: 70vw;
+  height: 65vh;
   background-color: hsl(217, 54%, 11%);
   margin: auto;
   padding: 80px 1px;
 }
 
 .inner-div {
-  width: 248px;
-  height: 440px;
+  width: 245px;
+  height: 428px;
   background-color: hsl(216, 50%, 16%);
   margin: auto;
-  padding: 15px 17px 0px 17px;
-  /* padding-top: 15px;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-bottom: 0px; */
+  padding: 15px 10px 0px 15px;
   border-radius: 5%;
 }
 
 .equ-img {
-  width: 250px;
+  width: 235px;
   height: auto;
   border-radius: 2%;
 }
@@ -45,7 +42,7 @@ body {
 .head-paragraph {
   color: white;
   position: absolute;
-  bottom: 39%;
+  bottom: 46%;
 }
 
 .middle-paragraph {
@@ -55,7 +52,7 @@ body {
   width: 99%;
   margin: auto;
   position: relative;
-  bottom: -8%;
+  bottom: -10%;
   line-height: 1.4;
 }
 
@@ -63,27 +60,27 @@ body {
   width: 7px;
   height: auto;
   position: relative;
-  bottom: -11%;
+  bottom: -14%;
 }
 
 .eth {
   position: relative;
   left: 15px;
-  bottom: -7%;
+  bottom: -9.6%;
   color: hsl(178, 100%, 50%);
 }
 
 .clock-img {
   position: relative;
   left: 140px;
-  bottom: -3%;
+  bottom: -5%;
 }
 
 h6 {
-  color: white;
+  color:hsl(215, 51%, 70%);
   position: relative;
   left: 165px;
-  bottom: 1.5%;
+  bottom: -0.5%;
 }
 
 hr {
@@ -102,15 +99,19 @@ hr {
   width: 20px;
   height: auto;
   position: relative;
-  bottom: 38%;
+  bottom: 39%;
 }
 
 .auther-name {
   color: white;
   font-size: 11px;
   position: relative;
-  bottom: 42.5%;
+  bottom: 43.5%;
   left: 30px;
+}
+
+span {
+  color:hsl(215, 51%, 70%);
 }
 
 .attribution {
