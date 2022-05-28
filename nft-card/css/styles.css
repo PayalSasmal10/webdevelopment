@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+.border-div {
+  margin: auto;
+  /* padding-top: 50px; */
+  /* height: 80vh; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.outer-div {
+  width: 80vw;
+  background-color: hsl(217, 54%, 11%);
+  margin: auto;
+  padding: 80px 1px;
+}
+
+.inner-div {
+  width: 248px;
+  height: 440px;
+  background-color: hsl(216, 50%, 16%);
+  margin: auto;
+  padding: 15px 17px 0px 17px;
+  /* padding-top: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 0px; */
+  border-radius: 5%;
+}
+
+.equ-img {
+  width: 250px;
+  height: auto;
+  border-radius: 2%;
+}
+
+.head-paragraph {
+  color: white;
+  position: absolute;
+  bottom: 39%;
+}
+
+.middle-paragraph {
+  color: hsl(215, 51%, 70%);
+  font-family: "Sacramento", cursive;
+  font-size: 14px;
+  width: 99%;
+  margin: auto;
+  position: relative;
+  bottom: -8%;
+  line-height: 1.4;
+}
+
+.diamond-img {
+  width: 7px;
+  height: auto;
+  position: relative;
+  bottom: -11%;
+}
+
+.eth {
+  position: relative;
+  left: 15px;
+  bottom: -7%;
+  color: hsl(178, 100%, 50%);
+}
+
+.clock-img {
+  position: relative;
+  left: 140px;
+  bottom: -3%;
+}
+
+h6 {
+  color: white;
+  position: relative;
+  left: 165px;
+  bottom: 1.5%;
+}
+
+hr {
+  border: none;
+  border-top-style: groove;
+  width: 87%;
+  border-width: 1px;
+  border-color: hsl(215, 51%, 70%);
+  margin: 100px auto;
+  position: relative;
+  bottom: 19%;
+  right: 5%;
+}
+
+.avtar-img {
+  width: 20px;
+  height: auto;
+  position: relative;
+  bottom: 38%;
+}
+
+.auther-name {
+  color: white;
+  font-size: 11px;
+  position: relative;
+  bottom: 42.5%;
+  left: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
