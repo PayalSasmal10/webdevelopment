@@ -1,5 +1,5 @@
 body {
-    background-color: #fcfbf8;
+    background-color: #e2ecfc;
 }
 
 .img-qr{
@@ -11,14 +11,13 @@ body {
 }
 
 .outside-qr{
-    background-color: #e2ecfc;
     padding: 80px;
     margin: auto;
     width: 70%;
 }
 
 .inside-div {
-    width: 25%;
+    width: 28%;
     height: auto;
     /* padding: 20px 5px 300px; */
     background-color: white;
@@ -31,8 +30,8 @@ body {
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     border-radius: 10px;
     
 }
@@ -40,7 +39,6 @@ img {
 .bold-para {
     font-size: 15px;
     font-family: 'Outfit', sans-serif;
-    font-weight: bold;
     padding-top: 10px;
     width: 80%;
     margin: auto;
