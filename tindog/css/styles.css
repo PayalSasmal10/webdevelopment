@@ -58,18 +58,28 @@ h1 {
 
 /* Features */
 
+#features {
+    padding: 10%;
+}
+
 .feature-col h3 {
     font-family: "Montserrate";
     font-weight: 900;
     margin: auto;
-    width: 53%;
+    font-size: 1.5rem;
+    width: 60%;
 
 }
 
 .feature-col p{
-    width: 50%;
+    width: 60%;
     font-family: "Ubuntu";
     font-size: 1rem;
     color: gray;
     margin: auto;
+}
+
+
+.feature-awesomefont :hover {
+    color:#efb172;
 }
