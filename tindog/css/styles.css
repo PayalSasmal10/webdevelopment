@@ -132,3 +132,14 @@ h2 {
     width: 15%;
     padding: 10px 20px 50px;
 }
+
+/* Pricing section */
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
