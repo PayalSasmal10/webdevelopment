@@ -55,8 +55,20 @@ h1 {
     width: 18%;
     transform: rotate(25deg);
     position: absolute;
+    right: 25%;
 }
 
+/* Responsiveness added */
+
+@media (max-width:1028px){
+    #title {
+        text-align: center;
+    }
+    .archie {
+        position: static;
+        transform: rotate(0);
+    }
+}
 
 /* Features */
 
@@ -146,4 +158,33 @@ h2 {
 
 .pricing-column{
     padding: 3% 2%;
+}
+
+/* Call to Action */
+
+#cta {
+    text-align: center;
+    background-color: #ff4c68;
+    padding: 7% 15%;
+    color: #fff;
+}
+
+#cta h3{
+    font-family: 'Monserrate-Bold';
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    
+}
+
+/* footer */
+
+#footer{
+    text-align: center;
+    margin: 7% 15%;
+    
+}
+
+.footer-icon{
+    margin: 6% 2% 2% 0;
 }
