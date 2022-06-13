@@ -86,3 +86,25 @@ function arrayFind(num) {
 for (i = 1; i <=100; i++){
     arrayFind(i)
 }
+
+// who pays bill
+
+function whosPaying(names) {
+    
+    /******Don't change the code above*******/
+        
+        //Write your code here.
+        
+        var namesLength = names.length;
+        console.log(namesLength)
+        var randPick = Math.floor(Math.random() * namesLength);
+        console.log(randPick)
+        return names[randPick] + " is going to buy lunch today!";
+        
+        
+    
+    
+    /******Don't change the code below*******/    
+    }
+    
+    whosPaying(["Payal", "Jack", "Pam", "Lara", "Jason"])
