@@ -63,3 +63,26 @@ if (guestList.includes(guestName)){
 else{
     alert("Your name is NOT present in guestList");
 }
+
+/* Write a program from 1 to 100 and print "Fizz" if it is multiples of 3 or "Buzz" if it is multiples of 5
+find the number which are multiples of both
+*/
+
+
+function arrayFind(num) {
+    if (num % 3 === 0) {
+        alert("Fizz");
+    }
+    else if (num % 5 === 0) {
+        alert("Buzz");
+    }
+
+    else if ( (num % 3 ===0) && (num % 5 ===0)){
+        alert("FizzBuzz");
+    }
+    
+}
+
+for (i = 1; i <=100; i++){
+    arrayFind(i)
+}
