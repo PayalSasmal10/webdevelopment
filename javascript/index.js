@@ -49,3 +49,17 @@ function bmiCalculator (weight, height) {
 
 var bmiMessage = bmiCalculator(60,2)
 console.log(bmiMessage)
+
+// Array started
+
+
+var guestList = ["Payal", "Jack", "Pam", "Lara", "Jason"];
+
+var guestName = prompt("what is your name?");
+
+if (guestList.includes(guestName)){
+    alert("Your name is present in guestList");
+}
+else{
+    alert("Your name is NOT present in guestList");
+}
