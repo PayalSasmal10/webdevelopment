@@ -108,3 +108,20 @@ function whosPaying(names) {
     }
     
     whosPaying(["Payal", "Jack", "Pam", "Lara", "Jason"])
+
+
+// while loop
+
+var i = 99;
+function whileLoop() {
+    while (i > 0){
+        console.log(i + " bottles of beer on the wall, " + i + " bottles of beer.");
+    }
+
+    if (i === 0){
+        console.log("No more bottles of beer");
+    }
+
+    i -= 1;
+}
+
