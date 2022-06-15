@@ -1,0 +1,13 @@
+body{
+    background-image: url("../images/background_image1.png") ;
+}
+
+
+.outer-div {
+    /* text-align: center; */
+    margin: auto 0% 100%;
+}
+
+.inner-div{
+    margin: auto;
+}
