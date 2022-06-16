@@ -17,7 +17,7 @@ body{
     height: 510px ;
     position: relative;
     left: 400px ;
-    padding: 40px 20px 70px 10px;
+    padding: 40px 13px 70px 10px;
     background-color: #F7D716;
     border-radius: 5%;
     
@@ -27,7 +27,7 @@ body{
     margin: auto;
     background-color: #fff;
     height: 430px;
-    width: 405px;
+    width: 410px;
     /* position: relative;
     left: 400px; */
     text-align: center;
@@ -75,10 +75,7 @@ body{
 
 .btn-cus{
     margin-top: 15px;
-    /* padding-top: 10%; */
-    color: #6d5d04;
     width: 270px;
     text-align: center;
-
-
+    text-emphasis-color: #6d5d04;
 }
