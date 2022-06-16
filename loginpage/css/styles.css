@@ -5,9 +5,46 @@ body{
 
 .outer-div {
     /* text-align: center; */
-    margin: auto 0% 100%;
+    margin: auto;
+    width: 70vw;
+    height: 65vh;
+    padding: 100px ;   
+}
+
+.mid-div {
+    width: 500px;
+    margin: auto;
+    height: 400px ;
+    position: relative;
+    left: 400px ;
+    padding: 20px 0px 70px 0px;
+    background-color: #F7D716;
+    border-radius: 5%;
+    
 }
 
 .inner-div{
     margin: auto;
+    background-color: #fff;
+    height: 400px;
+    width: 405px;
+    /* position: relative;
+    left: 400px; */
+    
+    border-radius: 3%;
+}
+
+h1 {
+    width: 400px;
+    height: 80px;
+    padding-top: 50px;
+    font-family: "Monserrate-Bold";
+    font-size: 2rem;
+    text-align: center;
+}
+
+h6{
+    font-family: "Monserrate-Bold";
+    
+    
 }
