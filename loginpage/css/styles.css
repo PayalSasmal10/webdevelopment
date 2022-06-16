@@ -14,10 +14,10 @@ body{
 .mid-div {
     width: 500px;
     margin: auto;
-    height: 400px ;
+    height: 480px ;
     position: relative;
     left: 400px ;
-    padding: 20px 0px 70px 0px;
+    padding: 20px 20px 70px 10px;
     background-color: #F7D716;
     border-radius: 5%;
     
@@ -34,25 +34,46 @@ body{
     border-radius: 3%;
 }
 
-h1 {
+.header {
     padding-top: 50px;
     font-family: "Monserrate-Bold";
-    font-size: 2rem;   
+    font-weight: 900;
+    font-size: 2rem; 
+    color: #6d5d04;  
 }
 
-h6{
-    font-family: "Monserrate-Bold";   
-    padding: 0px 35% 0px 0px;
 
+.hearder6{
+    font-family: "Monserrate-Bold";   
+    padding: 40px 0px 0px 0px;
+    color: #6d5d04; 
+
+}
+
+.login {
+    color: rgb(240, 16, 8);
+    text-decoration: none;
 }
 
 .fontaws-icon {
-    padding: 20px 65px;
+    padding: 20px 10px;
 }
 
 .input {
-    padding: 15px 10px 15px 20px;
+    padding: 15px 5px 15px 20px;
     width: 200px;
     height: 15px;
     border-radius: 15px 50px;
+    margin: auto;
+}
+
+::placeholder{
+    color: #6d5d04;
+
+}
+
+.btn-cus{
+    margin: auto;
+    padding-top: 10%;
+    color: #6d5d04;
 }
