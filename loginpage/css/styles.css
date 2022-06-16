@@ -30,21 +30,29 @@ body{
     width: 405px;
     /* position: relative;
     left: 400px; */
-    
+    text-align: center;
     border-radius: 3%;
 }
 
 h1 {
-    width: 400px;
-    height: 80px;
     padding-top: 50px;
     font-family: "Monserrate-Bold";
-    font-size: 2rem;
-    text-align: center;
+    font-size: 2rem;   
 }
 
 h6{
-    font-family: "Monserrate-Bold";
-    
-    
+    font-family: "Monserrate-Bold";   
+    padding: 0px 35% 0px 0px;
+
+}
+
+.fontaws-icon {
+    padding: 20px 65px;
+}
+
+.input {
+    padding: 15px 10px 15px 20px;
+    width: 200px;
+    height: 15px;
+    border-radius: 15px 50px;
 }
