@@ -67,8 +67,9 @@ body {
     left: 20px;
 }
 
-.result {
+p{
     font-family: "Monserrate-Bold";
     font-weight: 900;
+    color: red;
 
 }
