@@ -62,14 +62,21 @@ body {
 .btn-cus{
     margin-top: 40px;
     width: 280px;
+    height: 40px;
     color: #fff;
     position: relative;
     left: 20px;
+    background-color: rgb(199, 7, 7);
+    border: rgb(199, 7, 7);
+    text-align: center;
 }
 
 p{
     color: red;
     font-size: 30px;
+    text-align: center;
+    position: relative;
+    left: 30px;
 
 
 }

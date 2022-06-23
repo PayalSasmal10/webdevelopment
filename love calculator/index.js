@@ -44,12 +44,17 @@ function takeInputFromUser(){
     var result = count1.toString()+count2.toString();
 
     if (parseInt(result) <= 39){
-        document.getElementById("result").innerHTML = result +"%"  + '🤯';
+        document.getElementById("result").innerHTML = result +"% "  + '🤯';
     }
     
     else if(parseInt(result) >= 40 && parseInt(result) <= 99){
-        document.getElementById("result").innerHTML = result + "%" + '🥳';
+        document.getElementById("result").innerHTML = result + "% " + '🥳';
+    }
+
+    else if (parseInt(result) >= 100){
+        document.getElementById.innerHTML = result + "% " + '🔥';
     }
     
-    
+    document.getElementById('yourname').value = '';
+    document.getElementById('crushname').value = '';
 }
