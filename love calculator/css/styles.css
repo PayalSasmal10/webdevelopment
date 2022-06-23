@@ -1,0 +1,68 @@
+body {
+  background-image: url("../images/image.jpg");
+}
+
+.header {
+  color: rgb(253, 4, 4);
+  padding-bottom: 40px;
+  position: relative;
+  left: 10px;
+
+}
+
+.love-icon {
+  color: rgb(253, 4, 4);
+}
+
+.outer-div {
+  margin: auto;
+  width: 70vw;
+  height: 65vh;
+  padding: 100px;
+}
+
+.mid-div {
+  margin: auto;
+  width: 500px;
+  background-color: #ffc3c3;
+  height: 500px;
+  position: relative;
+  left: 410px;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.inner-div {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.input-class {
+    padding: 15px 10px 15px 10px;
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    border: solid red;
+    border-radius: 10px 100px / 120px;
+    
+
+}
+
+.font-aws-cus {
+    padding: 0px 20px;
+    color: rgb(216, 3, 3);
+}
+
+
+.btn-cus{
+    margin-top: 65px;
+    width: 280px;
+    color: #fff;
+    position: relative;
+    left: 20px;
+}
