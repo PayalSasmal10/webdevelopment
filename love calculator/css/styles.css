@@ -6,7 +6,7 @@ body {
   color: rgb(253, 4, 4);
   padding-bottom: 40px;
   position: relative;
-  left: 10px;
+  left: 15px;
 
 }
 
@@ -52,6 +52,8 @@ body {
     
 
 }
+
+
 
 .font-aws-cus {
     padding: 0px 20px;
