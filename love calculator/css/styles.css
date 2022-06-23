@@ -43,7 +43,7 @@ body {
 }
 
 .input-class {
-    padding: 15px 10px 15px 10px;
+    padding: 10px 10px 15px 10px;
     width: 200px;
     height: 40px;
     margin: auto;
@@ -60,9 +60,15 @@ body {
 
 
 .btn-cus{
-    margin-top: 65px;
+    margin-top: 40px;
     width: 280px;
     color: #fff;
     position: relative;
     left: 20px;
+}
+
+.result {
+    font-family: "Monserrate-Bold";
+    font-weight: 900;
+
 }

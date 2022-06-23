@@ -22,6 +22,10 @@ function takeInputFromUser(){
 
     }
 
+    if (count1 === 0){
+        count1 = '';
+    }
+
     for (var i=0; i<yourName.length; i++){
         if (matchChar2.includes(yourName[i].toLowerCase())){
             count2 += 1;
@@ -39,6 +43,6 @@ function takeInputFromUser(){
 
 
     
-    document.getElementById("result").innerHTML = count1.toString()+count2.toString();
+    document.getElementById("result").innerHTML = count1.toString()+count2.toString()+"%";
     
 }
