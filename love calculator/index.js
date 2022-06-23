@@ -47,12 +47,12 @@ function takeInputFromUser(){
         document.getElementById("result").innerHTML = result +"% "  + '🤯';
     }
     
-    else if(parseInt(result) >= 40 && parseInt(result) <= 99){
+    else if(parseInt(result) >= 40 && parseInt(result) <= 70){
         document.getElementById("result").innerHTML = result + "% " + '🥳';
     }
 
-    else if (parseInt(result) >= 100){
-        document.getElementById.innerHTML = result + "% " + '🔥';
+    else if (parseInt(result) >= 71){
+        document.getElementById("result").innerHTML = result + "% " + '🔥';
     }
     
     document.getElementById('yourname').value = '';
