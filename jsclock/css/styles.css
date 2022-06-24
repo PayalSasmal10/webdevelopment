@@ -1,0 +1,17 @@
+*,::before,::after{
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    background: linear-gradient(to right,hsl(200, 70%, 50%), #f1ffa8);
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    background-color:rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    border: 2px solid black;
+}
