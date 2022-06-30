@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+}
+
+/* .outer-div{
+    background-color: blueviolet;
+} */
+
+.mid-div{
+    /* background-color: rgb(252, 15, 7); */
+    width: 20%;
+    height: 80%;
+    margin: auto;
+    padding-top: 10%;
+    border-color: red;
+}
+
+.inner-div{
+    background-color: black;
+    text-align: center;
+    margin: auto;
+    padding: 10% 0% 10% 0%;
+    border-radius: 20%;
+    border-style: solid;
+    border-color: #7C3E66;
+}
+
+input{
+    text-decoration: none;
+    border: 0%;
+    border-radius: 0%;
+    border-color: black;
+    direction: rtl;
+    color: white;
+    background-color: black;
+    width: 65%;
+    height: 50%;
+    
+}
+
+.btn{
+    background-color: rgb(51, 45, 45);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10%;
+    border-color: rgb(8, 8, 8);
+    color: rgb(184, 180, 180);
+}
+
+.arithmetic1{
+    background:linear-gradient(to bottom, #F9D923, #ffcb5c);
+    color: white;
+}
+.arithmetic2{
+    background: linear-gradient(to bottom, #F9D923, #fd8904);
+    color: white;
+}
+
+.arithmetic3{
+    background: linear-gradient(to bottom, #f97123, #fd8904);
+    color: white;
+}
+
+.arithmetic4{
+    background: linear-gradient(to bottom, #f75e06, #fd3e04);
+    color: white;
+}
+
+.arithmetic5{
+    background: linear-gradient(to bottom, #fc5204, #f85514);
+    color: white;
+}
