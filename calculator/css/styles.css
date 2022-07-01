@@ -52,6 +52,13 @@ input{
     
 }
 
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    	-webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
 .btn{
     background-color: rgb(51, 45, 45);
     width: 50px;
