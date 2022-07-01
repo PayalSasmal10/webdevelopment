@@ -7,7 +7,8 @@ console.log(numberofButtton);
 for (var i =0; i< numberofButtton; i++){
     let dom = document.querySelectorAll(".btn")[i].addEventListener("click", function(){
         var buttonInnerHTML = this.innerHTML;
-        document.getElementById('text_input')[0] = buttonInnerHTML;
+        console.log(buttonInnerHTML);
+        document.getElementsByName('text_input')[0].value = buttonInnerHTML;
         
     });
     // console.log(dom);
@@ -16,7 +17,8 @@ for (var i =0; i< numberofButtton; i++){
 
 function makeCalculate(key){
     switch(key) {
-        case "btn1":
+        case 1:
+
 
     }
 
