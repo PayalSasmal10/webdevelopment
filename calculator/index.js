@@ -2,24 +2,21 @@
 
 let numberofButtton = document.querySelectorAll(".btn").length;
 
-console.log(numberofButtton);
+let outputInputField = 0;
+
 
 for (var i =0; i< numberofButtton; i++){
-    let dom = document.querySelectorAll(".btn")[i].addEventListener("click", function(){
+    document.querySelectorAll(".btn")[i].addEventListener("click", function(){
         var buttonInnerHTML = this.innerHTML;
-        console.log(buttonInnerHTML);
-        document.getElementsByName('text_input')[0].value = buttonInnerHTML;
-        
+        if (outputInputField != 0){
+            outputInputField += buttonInnerHTML;
+            document.getElementsByName('text_input')[0].value=parseInt(outputInputField);
+            console.log(outputInputField);
+        }else{
+            outputInputField = document.getElementsByName('text_input')[0].value=buttonInnerHTML;
+        }
+           
     });
-    // console.log(dom);
 }
 
 
-function makeCalculate(key){
-    switch(key) {
-        case 1:
-
-
-    }
-
-}
