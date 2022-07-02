@@ -13,9 +13,11 @@ for (var i =0; i< numberofButtton; i++){
             document.getElementsByName('text_input')[0].value=parseInt(outputInputField);
             console.log(outputInputField);
         }else if(outputInputField != 0 && buttonInnerHTML === '+'){
-            console.log("checking + value", buttonInnerHTML);
-            document.getElementsByName('text_input')[0].value='+';
-            // console.log(outputInputField);
+            console.log(`checking ${buttonInnerHTML} value`);
+            outputInputField += buttonInnerHTML;
+            document.getElementsByName('text_input')[0].value=outputInputField;
+            // arithmeticExpression(buttonInnerHTML);
+        
         }
         else{
             outputInputField = document.getElementsByName('text_input')[0].value=buttonInnerHTML;
@@ -25,3 +27,11 @@ for (var i =0; i< numberofButtton; i++){
 }
 
 
+function arithmeticExpression(key){
+    switch(key){
+        case "+":
+            console.log("+ was clicked");
+            document.getElementsByName('text_input')[0].value=key;
+            break;
+    }
+}
