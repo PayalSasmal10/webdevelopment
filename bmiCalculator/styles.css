@@ -1,5 +1,12 @@
 h1{
     text-align: center;
+    
+}
+.header {
+    background-color: #717fe0;
+    padding: 40px ;
+    color: white;
+
 }
 .qty .count {
     color: #000;
@@ -68,6 +75,7 @@ input:disabled{
 
 .icon {
     margin: 0% 0.75% 0% 0.5%;
+    padding-top: 20px;
 
     
 }
