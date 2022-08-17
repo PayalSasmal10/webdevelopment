@@ -15,7 +15,7 @@ h1{
     display: inline-block;
 }
 .qty .count {
-    color: #000;
+    color: #717fe0;
     display: inline-block;
     vertical-align: top;
     font-size: 25px;
@@ -84,6 +84,12 @@ span{
 .qty input:disabled{
     background-color:white;
 }
+
+.qty p {
+    position: relative;
+    left: 280px;
+    padding-top: 13px ;
+}
          
 /* Icon modification */
 
@@ -105,6 +111,9 @@ span{
     position: relative;
     left: 380px;
     
+}
+.height-div p{
+    padding-top: 13px;
 }
 
 /* Button */
