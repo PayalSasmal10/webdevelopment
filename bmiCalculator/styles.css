@@ -116,6 +116,20 @@ span{
     padding-top: 13px;
 }
 
+.heigt{
+    background: transparent;
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    width: 100px;
+    color: #717fe0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
 /* Button */
 .btn-bmi {
     margin-top: 20px;
