@@ -9,15 +9,15 @@ for(var i = 0; i<spans; i++){
 }
 
 function pressSpanBtn(key){
-    let val = parseInt(document.querySelector('input').value);
+    let val = parseInt(document.querySelector('.count').value);
     switch(key){
         case "-":
             val -= 1;
-            document.querySelector("input").value = val;
+            document.querySelector(".count").value = val;
             break;
         case "+":
             val += 1;
-            document.querySelector("input").value = val;
+            document.querySelector(".count").value = val;
     }
 }
 
