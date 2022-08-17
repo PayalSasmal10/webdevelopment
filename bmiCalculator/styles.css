@@ -29,6 +29,8 @@ h1{
     font: 30px/1 Arial, sans-serif;
     text-align: center;
     border-radius: 50%;
+    position: relative;
+    right: 200px;
 }
 
 .qty .minus {
@@ -42,8 +44,11 @@ h1{
     text-align: center;
     border-radius: 50%;
     background-clip: padding-box;
+    position: relative;
+    right: 200px;
 }
 div {
+    
     text-align: center;
 }
 .minus:hover{
@@ -61,6 +66,8 @@ span{
 input{  
     border: 0;
     width: 2%;
+    position: relative;
+    right: 200px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
