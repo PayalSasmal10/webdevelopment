@@ -133,6 +133,7 @@ span{
 /* Button */
 .btn-bmi {
     margin-top: 20px;
+    margin-bottom: 80px;
     text-align: center;
     background-color: #717fe0;
     position: relative;
@@ -150,23 +151,25 @@ span{
 /* Progress bar */
 .progress {
    max-width: 60%; 
-   margin-top: 80px;
+   height: 20px !important;
    position: relative;
    left: 330px;
    text-align: center;
-   color: white;
+   color: #fff;
    font-family:'Courier New', Courier, monospace;
-   font-size: 20px;
+   font-size: 50px;
+   
    
 }
 .progress-bar-u{
     width: 25%;
-    background-color: #FEDB39;
+    background-color: #FEC260;
+    text-align: center;
     
 }
 .progress-bar-n{
     width: 25%;
-    background-color: #21E1E1;
+    background-color: #19e6e6;
 }
 .progress-bar-ov{
     width: 25%;
