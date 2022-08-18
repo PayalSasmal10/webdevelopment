@@ -146,3 +146,34 @@ span{
     font-family:'Courier New', Courier, monospace;
     
 }
+
+/* Progress bar */
+.progress {
+   max-width: 60%; 
+   margin-top: 80px;
+   position: relative;
+   left: 330px;
+   text-align: center;
+   color: white;
+   font-family:'Courier New', Courier, monospace;
+   font-size: 20px;
+   
+}
+.progress-bar-u{
+    width: 25%;
+    background-color: #FEDB39;
+    
+}
+.progress-bar-n{
+    width: 25%;
+    background-color: #21E1E1;
+}
+.progress-bar-ov{
+    width: 25%;
+    background-color: #F29393;
+}
+.progress-bar-ob{
+    width: 25%;
+    background-color: #D61C4E;
+    
+}
