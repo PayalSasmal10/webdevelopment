@@ -2,8 +2,10 @@
 let spans = document.querySelectorAll('.span_btn').length;
 
 for(var i = 0; i<spans; i++){
+
     document.querySelectorAll('.span_btn')[i].addEventListener("click", function(){
         var spanInnerHtml = this.innerHTML;
+        console.log("inside 1", i);
         pressSpanBtn(spanInnerHtml);
     } );
 }
@@ -31,8 +33,20 @@ function pressSpanBtn(key){
 //         console.log(iconHtml);
 //     })
 // }
-const iconColor = document.querySelectorAll("icon");
-console.log(iconColor);
-// iconColor.addEventListener("click", function onClick(){
-//     iconColor.style.color = 'blue';
-// })
+let iconColor = document.querySelectorAll(".icon").length;
+// console.log(iconColor);
+for(var j=0; j<iconColor; j++){
+    console.log(j);
+    document.querySelectorAll(".icon")[j].addEventListener("click", function(){
+        var selectSex = this.innerHTML;
+        console.log("inside", j);
+        // document.body.style.color = 'blue';
+        console.log(document.querySelectorAll(".icon")[0]);
+        chooseSex(selectSex);
+
+    })
+}
+
+function chooseSex(key){
+    // console.log(key);
+}
