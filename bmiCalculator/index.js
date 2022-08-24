@@ -1,10 +1,11 @@
 // set the kgs and height values.
 let spans = document.querySelectorAll('.span_btn').length;
-
+console.log(document.querySelectorAll('.span_btn'));
 for(var i = 0; i<spans; i++){
 
     document.querySelectorAll('.span_btn')[i].addEventListener("click", function(){
         var spanInnerHtml = this.innerHTML;
+        console.log(spanInnerHtml);
         console.log("inside 1", i);
         pressSpanBtn(spanInnerHtml);
     } );
@@ -34,19 +35,27 @@ function pressSpanBtn(key){
 //     })
 // }
 let iconColor = document.querySelectorAll(".icon").length;
-// console.log(iconColor);
+console.log(document.querySelectorAll(".icon"));
 for(var j=0; j<iconColor; j++){
     console.log(j);
     document.querySelectorAll(".icon")[j].addEventListener("click", function(){
-        var selectSex = this.innerHTML;
-        console.log("inside", j);
-        // document.body.style.color = 'blue';
-        console.log(document.querySelectorAll(".icon")[0]);
+        var selectSex = this.classList[4];
+        
         chooseSex(selectSex);
 
     })
 }
 
 function chooseSex(key){
-    // console.log(key);
+    console.log(key);
+    const females = document.getElementById("fst_female");
+    const males = document.getElementById("fst_male");
+    switch(key){
+        case "female":
+            females.style.color = 'blue'; 
+            break;
+        case "male":
+            males.style.color = 'blue'; 
+            break;
+    }
 }
