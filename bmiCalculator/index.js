@@ -44,11 +44,11 @@ function chooseSex(key){
     const males = document.getElementById("fst_male");
     switch(key){
         case "female":
-            females.style.color = 'blue'; 
+            females.style.color = '#717fe0'; 
             males.style.color = 'black'; 
             break;
         case "male":
-            males.style.color = 'blue'; 
+            males.style.color = '#717fe0'; 
             females.style.color = 'black'; 
             break;
     }
