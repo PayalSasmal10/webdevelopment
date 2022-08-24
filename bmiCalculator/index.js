@@ -26,14 +26,6 @@ function pressSpanBtn(key){
 }
 
 // change the icon color
-// let icons = document.querySelectorAll('.icon').length;
-// console.log(icons);
-// for(var i = 0; i< icons; i++){
-//     document.querySelectorAll('.icon')[i].addEventListener("click", function(){
-//         var iconHtml = this.innerHTML;
-//         console.log(iconHtml);
-//     })
-// }
 let iconColor = document.querySelectorAll(".icon").length;
 console.log(document.querySelectorAll(".icon"));
 for(var j=0; j<iconColor; j++){
@@ -53,9 +45,11 @@ function chooseSex(key){
     switch(key){
         case "female":
             females.style.color = 'blue'; 
+            males.style.color = 'black'; 
             break;
         case "male":
             males.style.color = 'blue'; 
+            females.style.color = 'black'; 
             break;
     }
 }
