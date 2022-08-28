@@ -1,12 +1,10 @@
 // set the kgs and height values.
 let spans = document.querySelectorAll('.span_btn').length;
-console.log(document.querySelectorAll('.span_btn'));
+
 for(var i = 0; i<spans; i++){
 
     document.querySelectorAll('.span_btn')[i].addEventListener("click", function(){
         var spanInnerHtml = this.innerHTML;
-        console.log(spanInnerHtml);
-        console.log("inside 1", i);
         pressSpanBtn(spanInnerHtml);
     } );
 }
@@ -21,6 +19,7 @@ function pressSpanBtn(key){
         case "+":
             val += 1;
             document.querySelector(".count").value = val;
+            // console.log(document.querySelector(".count").value);
             break;
     }
 }
@@ -53,6 +52,10 @@ function chooseSex(key){
 
 
 // move the arrow function.
+
 document.querySelector(".btn-bmi").addEventListener("click", function(){
-    console.log("I am clicked");
+    let heights = document.querySelector(".heigt").valueAsNumber;
+    let weight = document.querySelector(".count").valueAsNumber;
+    let bmi = (weight/(heights/100)**2).toFixed(1); // round the number.
+    console.log(bmi);
 });
