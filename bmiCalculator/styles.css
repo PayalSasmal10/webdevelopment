@@ -108,6 +108,9 @@ span{
     text-align: center;
 
 }
+
+
+
 /* Height  */
 .height-div{
     width: 500px;
@@ -168,8 +171,8 @@ span{
 
 /* Button */
 .btn-bmi {
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 1px;
+    margin-bottom: 50px;
     text-align: center;
     background-color: #717fe0;
     position: relative;
