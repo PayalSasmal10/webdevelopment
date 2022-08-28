@@ -27,9 +27,7 @@ function pressSpanBtn(key){
 
 // change the icon color
 let iconColor = document.querySelectorAll(".icon").length;
-console.log(document.querySelectorAll(".icon"));
 for(var j=0; j<iconColor; j++){
-    console.log(j);
     document.querySelectorAll(".icon")[j].addEventListener("click", function(){
         var selectSex = this.classList[4];
         
@@ -39,7 +37,6 @@ for(var j=0; j<iconColor; j++){
 }
 
 function chooseSex(key){
-    console.log(key);
     const females = document.getElementById("fst_female");
     const males = document.getElementById("fst_male");
     switch(key){
@@ -53,3 +50,9 @@ function chooseSex(key){
             break;
     }
 }
+
+
+// move the arrow function.
+document.querySelector(".btn-bmi").addEventListener("click", function(){
+    console.log("I am clicked");
+});
