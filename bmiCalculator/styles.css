@@ -118,12 +118,14 @@ span{
 }
 .height-div p{
     padding-top: 13px;
+    position: relative;
+    left: 15px;
 }
 
 .heigt{
     background: transparent;
     border:none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
     outline: none;
     box-shadow: none;
     width: 100px;
@@ -132,6 +134,36 @@ span{
     font-weight: 700;
     line-height: 30px;
     text-align: center;
+}
+
+/* Result */
+.result-div{
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    left: 690px;
+    bottom: 85px;
+    
+}
+
+.result{
+    background: transparent;
+    border:none;
+    border-bottom: 4px solid #19e6e6;
+    outline: none;
+    box-shadow: none;
+    width: 100px;
+    color: #717fe0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+.result-div p{
+    padding-top: 13px;
+    position: relative;
+    left: 20px;
 }
 
 /* Button */
