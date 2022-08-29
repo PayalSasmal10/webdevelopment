@@ -57,6 +57,6 @@ document.querySelector(".btn-bmi").addEventListener("click", function(){
     let heights = document.querySelector(".heigt").valueAsNumber;
     let weight = document.querySelector(".count").valueAsNumber;
     let bmi = (weight/(heights/100)**2).toFixed(1); // round the number.
-    console.log(bmi);
     document.querySelector(".result").value = bmi;
+    document.getElementById("result-id").style.visibility = "visible";
 });

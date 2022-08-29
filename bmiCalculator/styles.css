@@ -146,6 +146,7 @@ span{
     position: relative;
     left: 690px;
     bottom: 85px;
+    visibility:hidden;
     
 }
 
