@@ -173,7 +173,7 @@ span{
 /* Button */
 .btn-bmi {
     margin-top: 1px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
     background-color: #717fe0;
     position: relative;
@@ -223,14 +223,15 @@ span{
 
 /* arrow */
 .arrow{
-    border: solid black;
+    /* border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     position: relative;
-    left: 650px;
+    left: 650px; */
+    font-size: 20px;
 
 }
 
