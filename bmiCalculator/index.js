@@ -59,4 +59,17 @@ document.querySelector(".btn-bmi").addEventListener("click", function(){
     let bmi = (weight/(heights/100)**2).toFixed(1); // round the number.
     document.querySelector(".result").value = bmi;
     document.getElementById("result-id").style.visibility = "visible";
+    if (bmi <=18.4){
+        document.getElementById("arrow-icon").style.left = "430px";
+    }
+    else if( bmi >=18.5 && bmi <=25){
+        document.getElementById("arrow-icon").style.left = "650px";
+    }
+    else if(bmi > 25 && bmi <=30){
+        document.getElementById("arrow-icon").style.left = "870px";
+    }
+    else if( bmi>30 ){
+        document.getElementById("arrow-icon").style.left = "1100px";
+    }
+
 });
