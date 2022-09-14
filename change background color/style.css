@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(184, 113, 7);
+}
+
+.click{
+    text-align: center;
+    margin: 300px;
+    position: relative;
+    left: 360px;
+}
