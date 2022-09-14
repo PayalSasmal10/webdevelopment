@@ -7,4 +7,9 @@ body{
     margin: 300px;
     position: relative;
     left: 360px;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(77, 69, 69);
+    border-radius: 10px;
+    color: white;
 }
