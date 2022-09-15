@@ -67,6 +67,10 @@ h5{
 .feedback{
     display: none;
 }
+
+.show{
+    display: block;
+}
 .message-content{
     color: #4b830a;
 }
