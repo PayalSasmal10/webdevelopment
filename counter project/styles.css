@@ -39,4 +39,5 @@ form button {
   outline: none;
   border: 1px solid rgb(83, 131, 125);
   padding: 7px;
+  cursor: pointer;
 }
