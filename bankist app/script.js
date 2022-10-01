@@ -77,6 +77,14 @@ const displayMovements = function (movements){
 
 displayMovements(account3.movements);
 
+// calculate the display amount
+const calDisplayBalance = function(movements){
+  const balance = movements.reduce((acc, mov) => acc+ mov, 0);
+  labelBalance.textContent = `${balance} EUR`;
+};
+
+calDisplayBalance(account1.movements);
+
 // const user = 'Steven Thomas Williams';
 const createUsernames = function(accs){
   accs.forEach(function(acc){
