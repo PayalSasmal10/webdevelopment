@@ -105,6 +105,16 @@ console.log(accounts);
 //   ['GBP', 'Pound sterling'],
 // ]);
 
-// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
+
+
+// Pipeline
+const euroToUsd = 1.1
+
+const totalDepositeUSD = movements.filter(mov => mov > 0).map((mov, i, arr) =>{ 
+    return mov* euroToUsd 
+  })
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(totalDepositeUSD);
