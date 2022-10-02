@@ -67,7 +67,7 @@ const displayMovements = function (movements){
     const type = mov > 0 ? "deposit" : "withdrawal";
     const html = ` <div class="movements__row">
     <div class="movements__type movements__type--${type}">${i+1} ${type}</div>
-    <div class="movements__value">${mov}</div>
+    <div class="movements__value">${mov}€</div>
   </div>
   `;
 
@@ -80,10 +80,24 @@ displayMovements(account3.movements);
 // calculate the display amount
 const calDisplayBalance = function(movements){
   const balance = movements.reduce((acc, mov) => acc+ mov, 0);
-  labelBalance.textContent = `${balance} EUR`;
+  labelBalance.textContent = `${balance} €`;
 };
 
 calDisplayBalance(account1.movements);
+
+// Income and withdrawls
+const calDisplaySummery = function(movements){
+  const incomes = movements.filter(mov => mov > 0).reduce((acc, mov) => acc + mov);
+  labelSumIn.textContent = `${incomes} €`;
+
+  const withdrawal = movements.filter(mov => mov < 0).reduce((acc, mov) => acc + mov);
+  labelSumOut.textContent = `${withdrawal} €`;
+
+}
+calDisplaySummery(account1.movements);
+
+
+
 
 // const user = 'Steven Thomas Williams';
 const createUsernames = function(accs){
@@ -105,16 +119,16 @@ console.log(accounts);
 //   ['GBP', 'Pound sterling'],
 // ]);
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 
 
 // Pipeline
-const euroToUsd = 1.1
+// const euroToUsd = 1.1
 
-const totalDepositeUSD = movements.filter(mov => mov > 0).map((mov, i, arr) =>{ 
-    return mov* euroToUsd 
-  })
-  .reduce((acc, mov) => acc + mov, 0);
-console.log(totalDepositeUSD);
+// const totalDepositeUSD = movements.filter(mov => mov > 0).map((mov, i, arr) =>{ 
+//     return mov* euroToUsd 
+//   })
+//   .reduce((acc, mov) => acc + mov, 0);
+// console.log(totalDepositeUSD);
