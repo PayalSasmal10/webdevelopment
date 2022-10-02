@@ -87,11 +87,19 @@ calDisplayBalance(account1.movements);
 
 // Income and withdrawls
 const calDisplaySummery = function(movements){
-  const incomes = movements.filter(mov => mov > 0).reduce((acc, mov) => acc + mov);
+  const incomes = movements.filter(mov => mov > 0).reduce((acc, mov) => acc + mov, 0);
   labelSumIn.textContent = `${incomes} €`;
 
-  const withdrawal = movements.filter(mov => mov < 0).reduce((acc, mov) => acc + mov);
-  labelSumOut.textContent = `${withdrawal} €`;
+  const withdrawal = movements.filter(mov => mov < 0).reduce((acc, mov) => acc + mov, 0);
+  labelSumOut.textContent = `${Math.abs(withdrawal)} €`;
+
+  const interest = movements.filter(mov => mov > 0).map(deposite => deposite * 1.2/100)
+  .filter((int, i, arr) =>{
+    console.log(arr);
+    return int > 1;
+  })
+  .reduce((acc,mov) => acc + mov, 0);
+  labelSumInterest.textContent = `${interest} €`;
 
 }
 calDisplaySummery(account1.movements);
