@@ -75,7 +75,7 @@ const displayMovements = function (movements){
   });
 };
 
-displayMovements(account3.movements);
+// displayMovements(account3.movements); for one account hardcoded stuff
 
 // calculate the display amount
 const calDisplayBalance = function(movements){
@@ -83,7 +83,7 @@ const calDisplayBalance = function(movements){
   labelBalance.textContent = `${balance} €`;
 };
 
-calDisplayBalance(account1.movements);
+// calDisplayBalance(account1.movements); for one account hardcoded stuff
 
 // Income and withdrawls
 const calDisplaySummery = function(movements){
@@ -102,7 +102,7 @@ const calDisplaySummery = function(movements){
   labelSumInterest.textContent = `${interest} €`;
 
 }
-calDisplaySummery(account1.movements);
+// calDisplaySummery(account1.movements); for one account hardcoded stuff
 
 
 
@@ -131,8 +131,13 @@ btnLogin.addEventListener('click', function(e){
     containerApp.style.opacity = 100;
 
     // Display movements
+    displayMovements(currentAccount.movements);
     // Display balance
+    calDisplayBalance(currentAccount.movements);
+
     // Display summery
+
+    calDisplaySummery(currentAccount.movements);
   }
 });
 
