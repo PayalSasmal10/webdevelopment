@@ -85,15 +85,15 @@ const calDisplayBalance = function(movements){
 
 // calDisplayBalance(account1.movements); for one account hardcoded stuff
 
-// Income and withdrawls
-const calDisplaySummery = function(movements){
-  const incomes = movements.filter(mov => mov > 0).reduce((acc, mov) => acc + mov, 0);
+// Income and withdrawls without hard coded interest value.
+const calDisplaySummery = function(accnt){
+  const incomes = accnt.movements.filter(mov => mov > 0).reduce((acc, mov) => acc + mov, 0);
   labelSumIn.textContent = `${incomes} €`;
 
-  const withdrawal = movements.filter(mov => mov < 0).reduce((acc, mov) => acc + mov, 0);
+  const withdrawal = accnt.movements.filter(mov => mov < 0).reduce((acc, mov) => acc + mov, 0);
   labelSumOut.textContent = `${Math.abs(withdrawal)} €`;
 
-  const interest = movements.filter(mov => mov > 0).map(deposite => deposite * 1.2/100)
+  const interest = accnt.movements.filter(mov => mov > 0).map(deposite => (deposite * accnt.interestRate)/100)
   .filter((int, i, arr) =>{
     console.log(arr);
     return int > 1;
@@ -103,8 +103,6 @@ const calDisplaySummery = function(movements){
 
 }
 // calDisplaySummery(account1.movements); for one account hardcoded stuff
-
-
 
 
 // const user = 'Steven Thomas Williams';
@@ -140,8 +138,7 @@ btnLogin.addEventListener('click', function(e){
     calDisplayBalance(currentAccount.movements);
 
     // Display summery
-
-    calDisplaySummery(currentAccount.movements);
+    calDisplaySummery(currentAccount);
   }
 });
 
