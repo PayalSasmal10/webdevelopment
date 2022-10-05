@@ -109,13 +109,26 @@ calDisplaySummery(account1.movements);
 
 // const user = 'Steven Thomas Williams';
 const createUsernames = function(accs){
-  accs.forEach(function(acc){
+  accs.forEach(function(acc) {
     acc.username = acc.owner.toLowerCase().split(' ').map(name => name[0]).join('');
   });
+ 
 };
-
 createUsernames(accounts);
-console.log(accounts);
+// console.log(accounts);
+
+// Event Handler for login.
+let currentAccount;
+
+btnLogin.addEventListener('click', function(e){
+  e.preventDefault();
+
+  currentAccount = accounts.find(acc => acc.username === inputLoginUsername.value);
+  
+  if(currentAccount.pin === Number(inputLoginPin.value)){
+    console.log("Logged In");
+  }
+});
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -132,7 +145,7 @@ console.log(accounts);
 /////////////////////////////////////////////////
 
 
-// Pipeline
+// Magic chaining method
 // const euroToUsd = 1.1
 
 // const totalDepositeUSD = movements.filter(mov => mov > 0).map((mov, i, arr) =>{ 
@@ -140,3 +153,5 @@ console.log(accounts);
 //   })
 //   .reduce((acc, mov) => acc + mov, 0);
 // console.log(totalDepositeUSD);
+
+// Find method
