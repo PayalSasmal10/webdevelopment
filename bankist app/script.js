@@ -125,10 +125,14 @@ btnLogin.addEventListener('click', function(e){
 
   currentAccount = accounts.find(acc => acc.username === inputLoginUsername.value);
   
-  if(currentAccount.pin === Number(inputLoginPin.value)){
+  if(currentAccount?.pin === Number(inputLoginPin.value)){
     // Display UI and message
     labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(' ')[0]}`;
     containerApp.style.opacity = 100;
+
+    // clear input fields
+    inputLoginUsername.value = inputLoginPin.value = '';
+    inputLoginPin.blur();
 
     // Display movements
     displayMovements(currentAccount.movements);
