@@ -171,6 +171,18 @@ btnTransfer.addEventListener('click', function(e){
 
 })
 
+// Request a loan
+btnLoan.addEventListener("click", function(e){
+  e.preventDefault();
+  const loanAmount = Number(inputLoanAmount.value);
+  if(loanAmount>0 && currentAccount.movements.some(mov => (mov * 0.1))){
+    currentAccount.movements.push(loanAmount);
+    
+  }
+  inputLoanAmount.value = "";
+})
+
+
 // close the account
 btnClose.addEventListener("click", function(e){
   e.preventDefault();
