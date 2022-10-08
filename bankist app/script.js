@@ -176,8 +176,13 @@ btnLoan.addEventListener("click", function(e){
   e.preventDefault();
   const loanAmount = Number(inputLoanAmount.value);
   if(loanAmount>0 && currentAccount.movements.some(mov => (mov * 0.1))){
+
+    // add positive movement 
     currentAccount.movements.push(loanAmount);
-    
+
+    // UI sections
+    UIPath(currentAccount);
+
   }
   inputLoanAmount.value = "";
 })
