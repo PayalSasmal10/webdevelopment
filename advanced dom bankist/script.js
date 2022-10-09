@@ -39,5 +39,7 @@ const message = document.createElement('div');
 message.classList.add('cookie-message');
 message.innerHTML = 'we use cookied for improved functionality and analytics. <button class="btn btn--class-cokie">Got it</button>';
 
-header.prepend(message);
-header.append(message);
+// header.prepend(message);
+// header.append(message);
+// header.before(message);
+header.after(message);
