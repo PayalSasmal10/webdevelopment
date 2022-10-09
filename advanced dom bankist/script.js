@@ -41,10 +41,11 @@ message.innerHTML = 'we use cookied for improved functionality and analytics. <b
 
 // header.prepend(message);
 // header.append(message);
-// header.before(message);
-header.after(message);
+header.before(message);
+// header.after(message);
 
 // Deleting element
 document.querySelector(".btn--class-cookie").addEventListener("click", function(){
-  message.remove();
+  // message.remove();
+  message.parentElement.removeChild(message);
 })
