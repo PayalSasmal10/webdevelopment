@@ -41,11 +41,26 @@ message.innerHTML = 'we use cookied for improved functionality and analytics. <b
 
 // header.prepend(message);
 // header.append(message);
-header.before(message);
-// header.after(message);
+// header.before(message);
+header.after(message);
 
 // Deleting element
 document.querySelector(".btn--class-cookie").addEventListener("click", function(){
   // message.remove();
   message.parentElement.removeChild(message);
 })
+
+// styles
+message.style.backgroundColor = '#37383d';
+message.style.width = '120%';
+
+console.log(message.style.color);
+console.log(message.style.backgroundColor);
+
+
+console.log(getComputedStyle(message).color);
+console.log(getComputedStyle(message).height);
+
+message.style.height = Number.parseFloat(getComputedStyle(message).height, 10 )+ 21 + 'px';
+
+console.log(getComputedStyle(message).height);
