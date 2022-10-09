@@ -37,9 +37,14 @@ const header = document.querySelector(".header");
 // creating and inserting elements
 const message = document.createElement('div');
 message.classList.add('cookie-message');
-message.innerHTML = 'we use cookied for improved functionality and analytics. <button class="btn btn--class-cokie">Got it</button>';
+message.innerHTML = 'we use cookied for improved functionality and analytics. <button class="btn btn--class-cookie">Got it</button>';
 
 // header.prepend(message);
 // header.append(message);
 // header.before(message);
 header.after(message);
+
+// Deleting element
+document.querySelector(".btn--class-cookie").addEventListener("click", function(){
+  message.remove();
+})
