@@ -101,7 +101,10 @@ console.log(twitter_link.getAttribute('href')); // absolute
 console.log(logo.dataset.versionSet);
 
 // classes
-
+logo.classList.add('c', 'j');
+logo.classList.remove('c', 'j');
+logo.classList.toggle('j');
+logo.classList.contains('j');
 
 
 
