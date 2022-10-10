@@ -41,9 +41,18 @@ btnScrollTo.addEventListener('click', function(e){
   console.log('current scroll (x/y)', window.pageXOffset, window.pageYOffset);
 
   // Scrolling
-  window.scrollTo(
-    s1coords.left + window.pageXOffset, s1coords.top+window.pageYOffset
-  );
+  // window.scrollTo(
+  //   s1coords.left + window.pageXOffset, s1coords.top+window.pageYOffset
+  // );
+  
+  // old school method
+  /*window.scrollTo({
+    left: s1coords.left + window.pageXOffset, 
+    top: s1coords.top+window.pageYOffset,
+    behavior: "smooth",
+});*/
+
+section1.scrollIntoView({ behavior : "smooth"});
 
 });
 
