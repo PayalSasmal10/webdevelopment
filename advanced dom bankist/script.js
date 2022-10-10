@@ -83,5 +83,19 @@ logo.setAttribute('company', 'bankist');
 console.log(logo.src); // Absolute
 console.log(logo.getAttribute('src')); // Relative
 
+console.log(logo.src); // Absolute
+console.log(logo.getAttribute('src')); // Relative
+
+const link = document.querySelector('.nav__link--btn');
+
+console.log(link.href); // Absolute
+console.log(link.getAttribute('href')); // Relative
+
+const twitter_link = document.querySelector('.twitter-link');
+
+console.log(twitter_link.href); // Absolute
+console.log(twitter_link.getAttribute('href')); // absolute
+
+
 
 
