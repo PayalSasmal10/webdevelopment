@@ -97,5 +97,12 @@ console.log(twitter_link.href); // Absolute
 console.log(twitter_link.getAttribute('href')); // absolute
 
 
+// DATASET
+console.log(logo.dataset.versionSet);
+
+// classes
+
+
+
 
 
