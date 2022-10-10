@@ -30,81 +30,105 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-// Selecting elements
+const btnScrollTo  = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector('#section--1');
 
-const header = document.querySelector(".header");
+btnScrollTo.addEventListener('click', function(e){
+  e.preventDefault();
+  const s1coords = section1.getBoundingClientRect();
+  console.log(s1coords);
 
-// creating and inserting elements
-const message = document.createElement('div');
-message.classList.add('cookie-message');
-message.innerHTML = 'we use cookied for improved functionality and analytics. <button class="btn btn--class-cookie">Got it</button>';
+  console.log('current scroll (x/y)', window.pageXOffset, window.pageYOffset);
 
-// header.prepend(message);
-// header.append(message);
-// header.before(message);
-header.after(message);
+  // Scrolling
+  window.scrollTo(
+    s1coords.left + window.pageXOffset, s1coords.top+window.pageYOffset
+  );
 
-// Deleting element
-document.querySelector(".btn--class-cookie").addEventListener("click", function(){
-  // message.remove();
-  message.parentElement.removeChild(message);
-})
-
-// styles
-message.style.backgroundColor = '#37383d';
-message.style.width = '120%';
-
-console.log(message.style.color);
-console.log(message.style.backgroundColor);
+});
 
 
-console.log(getComputedStyle(message).color);
-console.log(getComputedStyle(message).height);
-
-message.style.height = Number.parseFloat(getComputedStyle(message).height, 10 )+ 21 + 'px';
-
-console.log(getComputedStyle(message).height);
-
-document.documentElement.style.setProperty('--color-primary', 'orangered');
-
-// Attribute
-const logo = document.querySelector('.nav__logo');
-console.log(logo.src);
-console.log(logo.alt);
-console.log(logo.className);
-
-logo.alt = "Beautiful minimalist logo";
-
-// Non-Standard
-console.log(logo.designer);
-console.log(logo.getAttribute('designer'));
-logo.setAttribute('company', 'bankist');
-
-console.log(logo.src); // Absolute
-console.log(logo.getAttribute('src')); // Relative
-
-console.log(logo.src); // Absolute
-console.log(logo.getAttribute('src')); // Relative
-
-const link = document.querySelector('.nav__link--btn');
-
-console.log(link.href); // Absolute
-console.log(link.getAttribute('href')); // Relative
-
-const twitter_link = document.querySelector('.twitter-link');
-
-console.log(twitter_link.href); // Absolute
-console.log(twitter_link.getAttribute('href')); // absolute
 
 
-// DATASET
-console.log(logo.dataset.versionSet);
 
-// classes
-logo.classList.add('c', 'j');
-logo.classList.remove('c', 'j');
-logo.classList.toggle('j');
-logo.classList.contains('j');
+
+
+// // Selecting elements
+
+// const header = document.querySelector(".header");
+
+// // creating and inserting elements
+// const message = document.createElement('div');
+// message.classList.add('cookie-message');
+// message.innerHTML = 'we use cookied for improved functionality and analytics. <button class="btn btn--class-cookie">Got it</button>';
+
+// // header.prepend(message);
+// // header.append(message);
+// // header.before(message);
+// header.after(message);
+
+// // Deleting element
+// document.querySelector(".btn--class-cookie").addEventListener("click", function(){
+//   // message.remove();
+//   message.parentElement.removeChild(message);
+// })
+
+// // styles
+// message.style.backgroundColor = '#37383d';
+// message.style.width = '120%';
+
+// console.log(message.style.color);
+// console.log(message.style.backgroundColor);
+
+
+// console.log(getComputedStyle(message).color);
+// console.log(getComputedStyle(message).height);
+
+// message.style.height = Number.parseFloat(getComputedStyle(message).height, 10 )+ 21 + 'px';
+
+// console.log(getComputedStyle(message).height);
+
+// document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+// // Attribute
+// const logo = document.querySelector('.nav__logo');
+// console.log(logo.src);
+// console.log(logo.alt);
+// console.log(logo.className);
+
+// logo.alt = "Beautiful minimalist logo";
+
+// // Non-Standard
+// console.log(logo.designer);
+// console.log(logo.getAttribute('designer'));
+// logo.setAttribute('company', 'bankist');
+
+// console.log(logo.src); // Absolute
+// console.log(logo.getAttribute('src')); // Relative
+
+// console.log(logo.src); // Absolute
+// console.log(logo.getAttribute('src')); // Relative
+
+// const link = document.querySelector('.nav__link--btn');
+
+// console.log(link.href); // Absolute
+// console.log(link.getAttribute('href')); // Relative
+
+// const twitter_link = document.querySelector('.twitter-link');
+
+// console.log(twitter_link.href); // Absolute
+// console.log(twitter_link.getAttribute('href')); // absolute
+
+
+// // DATASET
+// console.log(logo.dataset.versionSet);
+
+// // classes
+// logo.classList.add('c', 'j');
+// logo.classList.remove('c', 'j');
+// logo.classList.toggle('j');
+// logo.classList.contains('j');
+
 
 
 
