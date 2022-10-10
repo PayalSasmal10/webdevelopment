@@ -52,6 +52,7 @@ btnScrollTo.addEventListener('click', function(e){
     behavior: "smooth",
 });*/
 
+// This is support only in modern browser.
 section1.scrollIntoView({ behavior : "smooth"});
 
 });
