@@ -64,3 +64,24 @@ console.log(getComputedStyle(message).height);
 message.style.height = Number.parseFloat(getComputedStyle(message).height, 10 )+ 21 + 'px';
 
 console.log(getComputedStyle(message).height);
+
+document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+// Attribute
+const logo = document.querySelector('.nav__logo');
+console.log(logo.src);
+console.log(logo.alt);
+console.log(logo.className);
+
+logo.alt = "Beautiful minimalist logo";
+
+// Non-Standard
+console.log(logo.designer);
+console.log(logo.getAttribute('designer'));
+logo.setAttribute('company', 'bankist');
+
+console.log(logo.src); // Absolute
+console.log(logo.getAttribute('src')); // Relative
+
+
+
