@@ -100,12 +100,15 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
 tabsContainer.addEventListener('click', function (e) {
   
   const clicked = e.target.closest('.operations__tab');
-  
-  console.log(clicked);
 
   // guard closer
   if(!clicked) return;
 
+  // remove the activated tab before add
+
+  tabs.forEach(t=> t.classList.remove('operations__tab--active'))
+
+  //  activate the tab
   clicked.classList.add('operations__tab--active');
 
 });
