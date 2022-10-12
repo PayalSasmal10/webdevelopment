@@ -10,7 +10,7 @@ const section1 = document.querySelector('#section--1');
 
 const tabs = document.querySelectorAll('.operations__tab');
 const tabsContainer = document.querySelector('.operations__tab-container');
-const tabsContent = document.querySelector('.operations__content');
+const tabsContent = document.querySelectorAll('.operations__content');
 
 ///////////////////////////////////////
 // Modal window
@@ -94,6 +94,8 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
 
 });
 
+
+
 ///////////////////////////////////////
 // Tabbed component
 
@@ -105,11 +107,19 @@ tabsContainer.addEventListener('click', function (e) {
   if(!clicked) return;
 
   // remove the activated tab before add
-
   tabs.forEach(t=> t.classList.remove('operations__tab--active'))
 
   //  activate the tab
   clicked.classList.add('operations__tab--active');
+
+
+  // activating content
+  console.log(clicked.dataset.tab);
+  
+  // remove the activated content before add
+  tabsContent.forEach(tc=> tc.classList.remove('operations__content--active'));
+
+  document.querySelector(`.operations__content--${clicked.dataset.tab}`).classList.add('operations__content--active');
 
 });
 
