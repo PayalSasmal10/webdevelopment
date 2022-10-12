@@ -62,7 +62,7 @@ section1.scrollIntoView({ behavior : "smooth"});
 ///////////////////////////////////////
 // Page Navigation
 
-document.querySelectorAll('.nav__link').forEach(function (el) {
+/*document.querySelectorAll('.nav__link').forEach(function (el) {
   
   el.addEventListener('click', function (e) {
     
@@ -71,6 +71,25 @@ document.querySelectorAll('.nav__link').forEach(function (el) {
       console.log(id);
       document.querySelector(id).scrollIntoView({behavior : "smooth"});
   });
+});*/
+
+/// Page navigation using event delegation
+// 1. Add event listener to common parent element
+// 2. Determine what element originated the event
+
+document.querySelector('.nav__links').addEventListener('click', function (e) {
+  e.preventDefault();
+  console.log(e.target);
+  
+  // Matching strategy - can be use to ignore click which is not clicked on the links
+  if(e.target.classList.contains('nav__link')){
+    console.log('Link');
+    const id = e.target.getAttribute('href');
+    console.log(id);
+    document.querySelector(id).scrollIntoView({behavior : "smooth"});
+
+  }
+
 });
 
 
