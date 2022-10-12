@@ -83,9 +83,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
   
   // Matching strategy - can be use to ignore click which is not clicked on the links
   if(e.target.classList.contains('nav__link')){
-    console.log('Link');
     const id = e.target.getAttribute('href');
-    console.log(id);
     document.querySelector(id).scrollIntoView({behavior : "smooth"});
 
   }
