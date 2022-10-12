@@ -8,6 +8,10 @@ const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 const btnScrollTo  = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
 
+const tabs = document.querySelectorAll('.operations__tab');
+const tabsContainer = document.querySelectorAll('.operations__tab-container');
+const tabsContent = document.querySelectorAll('.operations__content');
+
 ///////////////////////////////////////
 // Modal window
 
@@ -90,6 +94,12 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
 
 });
 
+///////////////////////////////////////
+// Tabbed component
+
+tabs.forEach(t=> t.addEventListener('click', () => 
+console.log('TAB')
+));
 
 
 
