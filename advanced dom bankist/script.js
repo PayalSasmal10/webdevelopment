@@ -191,7 +191,6 @@ const allSections = document.querySelectorAll('.section');
 
 const revealSection = function(entries, observer) {
   const [entry] = entries;
-  console.log(entry);
 
   if(!entry.isIntersecting) return;
 
@@ -211,6 +210,32 @@ allSections.forEach(function (section) {
 
 });
 
+///////////////////////////////////////
+// Lazy loading images
+
+const imgTargets = document.querySelectorAll('img[data-src]');
+
+const loadImg = function(entries, observer){
+  const [entry] = entries;
+  console.log(entry);
+
+  if(!entry.isIntersecting) return;
+
+  // Replace src with data-src img
+  entry.target.src = entry.target.dataset.src;
+  entry.target.addEventListener('load',function () {
+    entry.target.classList.remove('lazy-img');
+  });
+
+  entry.unobserve(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImg,{
+  root : null,
+  threshold : 0,
+});
+
+imgTargets.forEach(img => imgObserver.observe(img));
 
 
 
