@@ -238,6 +238,8 @@ const imgObserver = new IntersectionObserver(loadImg,{
 
 imgTargets.forEach(img => imgObserver.observe(img));
 
+// Slider - did not implemented
+
 
 
 
