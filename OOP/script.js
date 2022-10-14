@@ -97,8 +97,8 @@ mercedes.break();
 
 // class declaration
 class PersonCl {
-    constructor(firstName, birthday){
-        this.firstName = firstName;
+    constructor(fullName, birthday){
+        this.fullName = fullName;
         this.birthday = birthday;
     }
     // Methods will be added to .prototype property 
@@ -108,7 +108,7 @@ class PersonCl {
 
     // 2nd way
     greet() {
-        console.log(`Hey ${this.firstName}`);
+        console.log(`Hey ${this.fullName}`);
     }
 
     // getter 
@@ -117,11 +117,11 @@ class PersonCl {
     }
 
     set fullName(name){
-        if(name.includes(' ')) this.firstName = name;
+        if(name.includes(' ')) this._fullName = name;
         else alert(`${name} is not a full name.`);
     }
     get fullName(){
-        return this.firstName;
+        return this._fullName;
     }
 }
 
@@ -132,7 +132,7 @@ oli.calAge();
 console.log(oli.__proto__ === PersonCl.prototype);
 
 console.log(oli.age);
-oli.firstName;
+
 
 
 // 1st way
@@ -146,6 +146,8 @@ oli.greet();
 // 2. classes are first-class citizes
 // 3. classes are executed in stric mode
 
+
+const walter = new PersonCl('Walter', 1994);
 
 // Setter and Getter
 
