@@ -110,13 +110,29 @@ class PersonCl {
     greet() {
         console.log(`Hey ${this.firstName}`);
     }
+
+    // getter 
+    get age(){
+        return 2022- this.birthday;
+    }
+
+    set fullName(name){
+        if(name.includes(' ')) this.firstName = name;
+        else alert(`${name} is not a full name.`);
+    }
+    get fullName(){
+        return this.firstName;
+    }
 }
 
-const oli = new PersonCl('Oli', 1994);
+const oli = new PersonCl('Oli Sasmal', 1994);
 console.log(oli);
 oli.calAge();
 
 console.log(oli.__proto__ === PersonCl.prototype);
+
+console.log(oli.age);
+oli.firstName;
 
 
 // 1st way
