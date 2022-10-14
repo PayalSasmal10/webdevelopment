@@ -65,3 +65,70 @@ const h1 = document.querySelector('h1');
 console.dir(h1);
 console.dir(x => x+1);
 
+// Coding challenge for prototype.....
+const Car = function(make, speed){
+    this.make = make;
+    this.speed = speed;
+};
+
+Car.prototype.accelerate = function(){
+    this.speed += 10;
+    console.log(`${this.make} car is going at ${this.speed} km/h`);
+};
+
+Car.prototype.break = function() {
+    this.speed -= 5;
+    console.log(`${this.make} car is going at ${this.speed} km/h`);
+};
+
+const bmw = new Car('BMW', 125);
+const mercedes = new Car('Mercedes', 95);
+
+bmw.accelerate();
+bmw.break();
+
+mercedes.accelerate();
+mercedes.break();
+
+// ES6 Class
+
+// class expression
+// const PersonCI = class {};
+
+// class declaration
+class PersonCl {
+    constructor(firstName, birthday){
+        this.firstName = firstName;
+        this.birthday = birthday;
+    }
+    // Methods will be added to .prototype property 
+    calAge() {
+        console.log(2022 - this.birthday);
+    }
+
+    // 2nd way
+    greet() {
+        console.log(`Hey ${this.firstName}`);
+    }
+}
+
+const oli = new PersonCl('Oli', 1994);
+console.log(oli);
+oli.calAge();
+
+console.log(oli.__proto__ === PersonCl.prototype);
+
+
+// 1st way
+// PersonCl.prototype.greet = function(){
+//     console.log(`Hey ${this.firstName}`);
+// }
+
+oli.greet();
+
+// 1. classes are NOT hoisted
+// 2. classes are first-class citizes
+// 3. classes are executed in stric mode
+
+
+// Setter and Getter
