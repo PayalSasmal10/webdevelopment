@@ -42,3 +42,15 @@ console.log(payal);
 console.log(prince);
 console.log(payal.hasOwnProperty('species'));
 console.log(payal.hasOwnProperty('age'));
+
+console.log(payal.__proto__);
+// object prototype (top of prototype chain)
+console.log(payal.__proto__.__proto__);
+
+console.log(Person.prototype.constructor);
+
+const arr = [3, 2, 5, 10, 8, 1, 5];
+
+console.log(arr.__proto__);
+console.log(arr.__proto__.__proto__);
+console.log(arr.__proto__ === Array.prototype);
