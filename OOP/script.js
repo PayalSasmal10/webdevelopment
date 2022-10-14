@@ -142,6 +142,10 @@ console.log(oli.__proto__ === PersonCl.prototype);
 console.log(oli.age);
 
 
+// can't call like oli.hey() as static method can't be instansciated.
+PersonCl.hey()
+
+
 
 // 1st way
 // PersonCl.prototype.greet = function(){
@@ -155,7 +159,7 @@ oli.greet();
 // 3. classes are executed in stric mode
 
 
-const walter = new PersonCl('Walter', 1994);
+const walter = new PersonCl('Walter w', 1994);
 
 // Setter and Getter
 
