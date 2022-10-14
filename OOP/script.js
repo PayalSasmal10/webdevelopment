@@ -101,6 +101,7 @@ class PersonCl {
         this.fullName = fullName;
         this.birthday = birthday;
     }
+    // Instance methods
     // Methods will be added to .prototype property 
     calAge() {
         console.log(2022 - this.birthday);
@@ -123,7 +124,14 @@ class PersonCl {
     get fullName(){
         return this._fullName;
     }
+
+    // static method
+    static hey(){
+        console.log("Hey there!");
+        console.log(this);
+    }
 }
+
 
 const oli = new PersonCl('Oli Sasmal', 1994);
 console.log(oli);
