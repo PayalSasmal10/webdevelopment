@@ -178,3 +178,18 @@ const account = {
 console.log(account.latest);
 account.latest = 50;
 console.log(account.movements);
+
+
+// object.create
+
+const PersonProto = {
+    calCAge() {
+        console.log(2022 - this.birthday);
+    },
+};
+
+const steven = Object.create(PersonProto);
+console.log(steven);
+steven.name = 'Steven';
+steven.birthday = 1996;
+steven.calCAge();
