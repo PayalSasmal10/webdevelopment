@@ -186,6 +186,11 @@ const PersonProto = {
     calCAge() {
         console.log(2022 - this.birthday);
     },
+
+    init(firstName, birthday){
+        this.firstName = firstName;
+        this.birthday = birthday;
+    }
 };
 
 const steven = Object.create(PersonProto);
@@ -193,3 +198,8 @@ console.log(steven);
 steven.name = 'Steven';
 steven.birthday = 1996;
 steven.calCAge();
+
+const sarah = Object.create(PersonProto);
+
+sarah.init('Sarah', 1995);
+sarah.calCAge();
