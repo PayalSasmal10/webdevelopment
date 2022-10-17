@@ -113,7 +113,6 @@ const getCountyDataUsingPromise = function (country) {
 */
 
 // with arrow function
-
 const getCountyDataUsingPromise = function (country) {
     fetch(`https://restcountries.com/v2/name/${country}`
     ).then(response => response.json()
