@@ -88,4 +88,5 @@ const getCountryAndNeighbour = function (country) {
     });
 };
 
-getCountryAndNeighbour('germany');
+// getCountryAndNeighbour('germany');
+getCountryAndNeighbour('usa');
