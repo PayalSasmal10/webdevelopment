@@ -36,6 +36,8 @@ getCountryData('portugal');
 getCountryData('usa');*/
 
 
+
+// Call back hell example
 const renderCountry = function (data, className='') {
     const html = `
         <article class="country ${className}">
