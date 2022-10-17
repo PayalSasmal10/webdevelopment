@@ -115,13 +115,8 @@ const getCountyDataUsingPromise = function (country) {
 // with arrow function
 
 const getCountyDataUsingPromise = function (country) {
-    fetch(`https://restcountries.com/v2/name/${country}`).then(function (response) {
-        console.log(response);
-        // to read the promises 
-        return response.json();
-    }).then(function (data) {
-        console.log(data);
-        renderCountry(data[0])
-    });
+    fetch(`https://restcountries.com/v2/name/${country}`
+    ).then(response => response.json()
+    ).then(data => renderCountry(data[0]));
 };
 getCountyDataUsingPromise('portugal');
