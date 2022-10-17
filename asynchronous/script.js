@@ -123,11 +123,23 @@ const getCountyDataUsingPromise = function (country) {
 
         if(!neighbour) return;
 
-        return fetch(`https://restcountries.com/v2/alpha/${neighbour}`)
+        // neighbour country
+        return fetch(`https://restcountries.com/v2/alpha/${neighbour}`);
         
     })
     .then(responseNeighbour => responseNeighbour.json())
-    .then(data1 => renderCountry(data1, 'neighbour'));
+    .then(data1 => {
+        renderCountry(data1, 'neighbour');
+        const neighbour = data1.borders?.[0];
+        console.log(neighbour);
+
+        if(!neighbour) return;
+
+        return fetch(`https://restcountries.com/v2/alpha/${neighbour}`);
+    })
+    .then(responseNeiNei => responseNeiNei.json())
+    .then(data => renderCountry(data, 'neighbour'));
+        
 
     
 };
