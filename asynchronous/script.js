@@ -116,6 +116,19 @@ const getCountyDataUsingPromise = function (country) {
 const getCountyDataUsingPromise = function (country) {
     fetch(`https://restcountries.com/v2/name/${country}`
     ).then(response => response.json()
-    ).then(data => renderCountry(data[0]));
+    ).then(data => { 
+        renderCountry(data[0]);
+        const neighbour = data[0].borders?.[0];
+        console.log(neighbour);
+
+        if(!neighbour) return;
+
+        return fetch(`https://restcountries.com/v2/alpha/${neighbour}`)
+        
+    })
+    .then(responseNeighbour => responseNeighbour.json())
+    .then(data1 => renderCountry(data1, 'neighbour'));
+
+    
 };
 getCountyDataUsingPromise('portugal');
