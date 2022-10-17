@@ -38,6 +38,7 @@ getCountryData('usa');*/
 
 
 // Call back hell example
+
 const renderCountry = function (data, className='') {
     const html = `
         <article class="country ${className}">
@@ -54,7 +55,7 @@ const renderCountry = function (data, className='') {
         countriesContainer.insertAdjacentHTML('beforeend', html);
         countriesContainer.style.opacity = 1;
 }
-
+/*
 const getCountryAndNeighbour = function (country) { 
 
     // AJAX Call country 1
@@ -92,3 +93,35 @@ const getCountryAndNeighbour = function (country) {
 
 // getCountryAndNeighbour('germany');
 getCountryAndNeighbour('usa');
+*/
+
+const request = fetch('https://restcountries.com/v2/name/germany');
+console.log(request);
+
+// without arrow function
+/*
+const getCountyDataUsingPromise = function (country) {
+    fetch(`https://restcountries.com/v2/name/${country}`).then(function (response) {
+        console.log(response);
+        // to read the promises 
+        return response.json();
+    }).then(function (data) {
+        console.log(data);
+        renderCountry(data[0])
+    });
+};
+*/
+
+// with arrow function
+
+const getCountyDataUsingPromise = function (country) {
+    fetch(`https://restcountries.com/v2/name/${country}`).then(function (response) {
+        console.log(response);
+        // to read the promises 
+        return response.json();
+    }).then(function (data) {
+        console.log(data);
+        renderCountry(data[0])
+    });
+};
+getCountyDataUsingPromise('portugal');
