@@ -77,7 +77,7 @@ const getCountryAndNeighbour = function (country) {
         const request2 = new XMLHttpRequest();
         request2.open('GET', `https://restcountries.com/v2/alpha/${neighbour}`);
         request2.send();
-
+        // call back hell
         request2.addEventListener('load', function () {
             const data1 = JSON.parse(this.responseText);
             console.log(data1);
