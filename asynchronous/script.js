@@ -192,7 +192,7 @@ const getCountyDataUsingPromise = function (country) {
         if(!neighbour) throw new Error("No Neighbour found!");
 
         // neighbour country 1
-        return getJson(`https://restcountries.com/v2/alpha/${neighbour}`, 'Country not found');
+        return getJSON(`https://restcountries.com/v2/alpha/${neighbour}`, 'Country not found');
         
     })
     .then(data1 => {
@@ -203,7 +203,7 @@ const getCountyDataUsingPromise = function (country) {
         if(!neighbour) throw new Error('No Neighbour found!');
 
         // Neighbour country 2
-        return getJson(`https://restcountries.com/v2/alpha/${neighbour}`, 'Country not found');
+        return getJSON(`https://restcountries.com/v2/alpha/${neighbour}`, 'Country not found');
     })
     .then(data => renderCountry(data, 'neighbour'))
     .catch(err => {
