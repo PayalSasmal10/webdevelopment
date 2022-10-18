@@ -127,9 +127,8 @@ const getCountyDataUsingPromise = function (country) {
         console.log(response);
         
         // Manually handeling the status
-        if(!response.ok){
+        if(!response.ok)
             throw new Error(`Country is not found (${response.status})`);
-        }
         return response.json();
 
     }).then(data => { 
