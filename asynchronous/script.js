@@ -221,5 +221,13 @@ btn.addEventListener('click', function () {
     getCountyDataUsingPromise('portugal');
 });
 
-getCountyDataUsingPromise('australia');
+// getCountyDataUsingPromise('australia');
 
+
+///////////////////////////////////////////
+// Event loop Examples
+
+console.log('Test Start');
+setTimeout(() => console.log('0 set time out'), 0);
+Promise.resolve('Resolved promise 1.').then(res => console.log(res));
+console.log('Test End');
