@@ -147,7 +147,7 @@ const getCountyDataUsingPromise = function (country) {
     .then(data => renderCountry(data, 'neighbour'))
     .catch(err => {
         console.error(`${err} 💥 💥`),
-        renderCountry(`Something went wrong 💥 💥 ${err.message}. TRy again!`);
+        renderError(`Something went wrong 💥 💥 ${err.message}. Try again!`);
     });
         
     
