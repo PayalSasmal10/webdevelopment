@@ -120,7 +120,8 @@ const getCountyDataUsingPromise = function (country) {
 };
 */
 
-// with arrow function
+// with arrow function 
+/*
 const getCountyDataUsingPromise = function (country) {
     fetch(`https://restcountries.com/v2/name/${country}`
     ).then(response => {
@@ -165,12 +166,60 @@ const getCountyDataUsingPromise = function (country) {
         
     
 };
+*/
 
+const getJSON = function(url, errMsg = 'Something went wrong') {
+    return fetch(url).then(response => {
+        console.log(response);
+        
+        // Manually handeling the status
+        if(!response.ok)
+            throw new Error(`${errMsg} (${response.status})`);
+        return response.json();
+
+    });
+};
+
+// with arrow function- remove code repetative
+const getCountyDataUsingPromise = function (country) {
+    // country 1
+    getJSON(`https://restcountries.com/v2/name/${country}`, 'Country not found')
+    .then(data => { 
+        renderCountry(data[0]);
+        const neighbour = data[0].borders?.[0];
+        console.log(neighbour);
+
+        if(!neighbour) throw new Error("No Neighbour found!");
+
+        // neighbour country 1
+        return getJson(`https://restcountries.com/v2/alpha/${neighbour}`, 'Country not found');
+        
+    })
+    .then(data1 => {
+        renderCountry(data1, 'neighbour');
+        const neighbour = data1.borders?.[0];
+        console.log(neighbour);
+
+        if(!neighbour) throw new Error('No Neighbour found!');
+
+        // Neighbour country 2
+        return getJson(`https://restcountries.com/v2/alpha/${neighbour}`, 'Country not found');
+    })
+    .then(data => renderCountry(data, 'neighbour'))
+    .catch(err => {
+        console.error(`${err} 💥 💥`),
+        renderError(`Something went wrong 💥 💥 ${err.message}. Try again!`);
+    })
+    .finally(() => {
+        countriesContainer.style.opacity = 1;
+    });
+
+};
 
 
 btn.addEventListener('click', function () {
     getCountyDataUsingPromise('portugal');
 });
 
-getCountyDataUsingPromise('kajsjss');
+getCountyDataUsingPromise('australia');
 
