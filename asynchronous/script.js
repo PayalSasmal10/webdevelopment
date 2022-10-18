@@ -123,8 +123,16 @@ const getCountyDataUsingPromise = function (country) {
 // with arrow function
 const getCountyDataUsingPromise = function (country) {
     fetch(`https://restcountries.com/v2/name/${country}`
-    ).then(response => response.json()
-    ).then(data => { 
+    ).then(response => {
+        console.log(response);
+        
+        // Manually handeling the status
+        if(!response.ok){
+            throw new Error(`Country is not found (${response.status})`);
+        }
+        return response.json();
+
+    }).then(data => { 
         renderCountry(data[0]);
         const neighbour = data[0].borders?.[0];
         console.log(neighbour);
@@ -163,5 +171,7 @@ const getCountyDataUsingPromise = function (country) {
 
 btn.addEventListener('click', function () {
     getCountyDataUsingPromise('portugal');
-})
+});
+
+getCountyDataUsingPromise('kajsjss');
 
