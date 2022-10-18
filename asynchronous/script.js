@@ -5,7 +5,9 @@ const countriesContainer = document.querySelector('.countries');
 
 const renderError = function (msg) {
     countriesContainer.insertAdjacentHTML('beforeend', msg);
-    countriesContainer.style.opacity = 1;
+
+   // Opacity is added to finally method
+    // countriesContainer.style.opacity = 1;
 }
 
 ///////////////////////////////////////
@@ -58,7 +60,8 @@ const renderCountry = function (data, className='') {
         </article>
         `;
         countriesContainer.insertAdjacentHTML('beforeend', html);
-        countriesContainer.style.opacity = 1;
+        // Opacity is added to finally method
+        // countriesContainer.style.opacity = 1;
 }
 /*
 const getCountryAndNeighbour = function (country) { 
@@ -148,6 +151,9 @@ const getCountyDataUsingPromise = function (country) {
     .catch(err => {
         console.error(`${err} 💥 💥`),
         renderError(`Something went wrong 💥 💥 ${err.message}. Try again!`);
+    })
+    .finally(() => {
+        countriesContainer.style.opacity = 1;
     });
         
     
