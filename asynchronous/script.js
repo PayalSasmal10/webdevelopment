@@ -230,4 +230,11 @@ btn.addEventListener('click', function () {
 console.log('Test Start');
 setTimeout(() => console.log('0 set time out'), 0);
 Promise.resolve('Resolved promise 1.').then(res => console.log(res));
+
+Promise.resolve('Promise resolve 2').then(res => {
+    for(let i = 0; i < 1000000; i++) {}
+    console.log(res);
+}
+    
+);
 console.log('Test End');
