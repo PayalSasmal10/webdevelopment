@@ -123,7 +123,7 @@ const getCountyDataUsingPromise = function (country) {
 
         if(!neighbour) return;
 
-        // neighbour country
+        // neighbour country 1
         return fetch(`https://restcountries.com/v2/alpha/${neighbour}`);
         
     })
@@ -135,12 +135,19 @@ const getCountyDataUsingPromise = function (country) {
 
         if(!neighbour) return;
 
+        // Neighbour country 2
         return fetch(`https://restcountries.com/v2/alpha/${neighbour}`);
     })
     .then(responseNeiNei => responseNeiNei.json())
-    .then(data => renderCountry(data, 'neighbour'));
+    .then(data => renderCountry(data, 'neighbour'))
+    .catch(err => alert(err));
         
-
     
 };
-getCountyDataUsingPromise('portugal');
+
+
+
+btn.addEventListener('click', function () {
+    getCountyDataUsingPromise('portugal');
+})
+
