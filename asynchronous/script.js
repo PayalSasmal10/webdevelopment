@@ -3,6 +3,11 @@
 const btn = document.querySelector('.btn-country');
 const countriesContainer = document.querySelector('.countries');
 
+const renderError = function (msg) {
+    countriesContainer.insertAdjacentHTML('beforeend', msg);
+    countriesContainer.style.opacity = 1;
+}
+
 ///////////////////////////////////////
 /*
 const getCountryData = function (country) { 
@@ -140,7 +145,10 @@ const getCountyDataUsingPromise = function (country) {
     })
     .then(responseNeiNei => responseNeiNei.json())
     .then(data => renderCountry(data, 'neighbour'))
-    .catch(err => alert(err));
+    .catch(err => {
+        console.error(`${err} 💥 💥`),
+        renderCountry(`Something went wrong 💥 💥 ${err.message}. TRy again!`);
+    });
         
     
 };
