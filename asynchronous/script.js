@@ -7,7 +7,7 @@ const renderError = function (msg) {
     countriesContainer.insertAdjacentHTML('beforeend', msg);
 
    // Opacity is added to finally method
-    // countriesContainer.style.opacity = 1;
+    countriesContainer.style.opacity = 1;
 }
 
 ///////////////////////////////////////
@@ -61,8 +61,8 @@ const renderCountry = function (data, className='') {
         `;
         countriesContainer.insertAdjacentHTML('beforeend', html);
         // Opacity is added to finally method
-        // countriesContainer.style.opacity = 1;
-}
+        countriesContainer.style.opacity = 1;
+};
 /*
 const getCountryAndNeighbour = function (country) { 
 
@@ -244,6 +244,7 @@ console.log('Test End');
 //////////////////////////////////////////////////////
 // Promises 
 
+/*
 const lotteryPromise = new Promise(function (resolve, reject) {
     console.log("Lottery draw is happening....");
     setTimeout(function () {
@@ -283,3 +284,26 @@ wait(2)
 
 Promise.resolve('abc').then(x => console.log(x));
 Promise.reject(new Error('Problem!')).catch(x => console.error(x));
+*/
+
+
+
+///////////////////////////// 
+// Async and Await
+
+const whereAmI = async function (country) {
+    /* This is same like below await and async
+        fetch(`https://restcountries.com/v2/name/${country}`)
+        .then(res => res.json())
+        .then(data => renderCountry(data[0]));
+    */
+    
+    const res = await fetch(`https://restcountries.com/v2/name/${country}`);
+    const data = await res.json();
+    console.log(data);
+    renderCountry(data[0]);
+    
+
+};
+whereAmI('portugal');
+console.log('FIRST');
