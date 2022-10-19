@@ -227,6 +227,7 @@ btn.addEventListener('click', function () {
 ///////////////////////////////////////////
 // Event loop Examples
 
+/*
 console.log('Test Start');
 setTimeout(() => console.log('0 set time out'), 0);
 Promise.resolve('Resolved promise 1.').then(res => console.log(res));
@@ -238,3 +239,20 @@ Promise.resolve('Promise resolve 2').then(res => {
     
 );
 console.log('Test End');
+*/
+
+//////////////////////////////////////////////////////
+// Promises 
+
+const lotteryPromise = new Promise(function (resolve, reject) {
+    console.log("Lottery draw is happening....");
+    setTimeout(function () {
+        if(Math.random() >= 0.5){
+            resolve("You win!");
+        }else{
+            reject( new Error("You lost your money"));
+        }
+    }, 2000);
+});
+
+lotteryPromise.then(res => console.log(res)).catch(err => console.error(err));
