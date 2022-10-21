@@ -88,4 +88,28 @@ function varExample5() {
     };
     console.log(x);
 };
-varExample5();
+// varExample5();
+
+// iv
+function varExample6() {
+    let t = 10;
+    // let t = 19;
+    console.log(t);
+    t = 60;
+    console.log(t);
+};
+varExample6();
+
+// Type 4- const
+// Not  Hoisting
+// globally accessable
+// block scope
+// re-declaration is not allow in same block
+const st = 8
+function varExample7() {
+    const st = 11;
+    console.log(st);
+    
+};
+console.log(st);
+varExample7();
