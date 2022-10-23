@@ -4,6 +4,11 @@
     font-family: 'Itim', cursive;
 }
 
+:root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) * .9);
+}
+
 .background {
     background-color: #12181B;
     height: 100vh;
@@ -11,14 +16,14 @@
 }
 
 .title {
-    color: white;
+    color: rgb(176, 249, 252);;
     text-align: center;
     font-size: 40px;
     margin-top: 10%;
 }
 
 .display{
-    color: white;
+    color: rgb(196, 243, 245);;
     font-size: 25px;
     text-align: center;
     margin-top: 1em;
@@ -81,6 +86,24 @@ table tr td:last-child{
     border-right: 0;
 }
 
+.cell {
+    /* width: var(--cell-size); */
+    /* width: var(--cell-size); */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.x::before,
+.cell.x::after{
+    content: '';
+    width: calc(var(--mark-size) * .15);
+    height: var(--mark-size);
+    background-color: red;
+}
+
+
+
 .playerX{
     color: #09c372;
 }
@@ -102,7 +125,7 @@ table tr td:last-child{
 
 #reset {
     background-color: #FF3860;
-    color: white;
+    color: rgb(198, 248, 252);
     padding: 8px;
     border-radius: 8px;
     border : none;
