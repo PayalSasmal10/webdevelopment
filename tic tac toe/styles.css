@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+
+.background {
+    background-color: #12181B;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.display{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+/* .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.tile {
+    border: 1px solid white;
+    min-width: 100px;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+} */
+
+td {
+    border : 2px solid rgb(176, 249, 252);
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    margin-left: -155px;
+    /* top: 50px; */
+}
+
+table tr:first-child td{
+    border-top: 0;
+}
+
+table tr:last-child td{
+    border-bottom: 0;
+}
+
+table tr td:first-child{
+    border-left:0;
+}
+table tr td:last-child{
+    border-right: 0;
+}
+
+.playerX{
+    color: #09c372;
+}
+
+.playerO {
+    color: #498afb;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#reset {
+    background-color: #FF3860;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border : none;
+    font-size: 20px;
+    margin-left: 1em;
+    /* position: absolute;
+    margin-bottom: -120%; */
+    cursor: pointer;
+}
+
