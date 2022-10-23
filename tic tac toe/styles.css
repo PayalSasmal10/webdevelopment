@@ -89,12 +89,15 @@ table tr td:last-child{
     color: #498afb;
 }
 
+
 .controls {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    position: relative;
+    top: 390px;
 }
 
 #reset {
@@ -104,9 +107,8 @@ table tr td:last-child{
     border-radius: 8px;
     border : none;
     font-size: 20px;
-    margin-left: 1em;
-    /* position: absolute;
-    margin-bottom: -120%; */
+    margin-left: 0.5em;
+   
     cursor: pointer;
 }
 
