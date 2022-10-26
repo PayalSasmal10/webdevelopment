@@ -42,7 +42,6 @@ const inventors = [
  
 // 3rd way
  const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
-//  console.log(fifteen);
 console.table(fifteen);
 
   // Array.prototype.map()
