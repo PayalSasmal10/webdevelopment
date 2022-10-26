@@ -75,6 +75,15 @@ console.log(fullname);
 
   // Array.prototype.reduce()
   // 4. How many years did all the inventors live all together?
+//  1st way
+  let total = 0;
+  for (var i = 0; i< inventors.length; i++){
+      total += inventors[i].passed - inventors[i].year;
+  }
+  console.log(total);
+
+//   2nd way
+
 
   // 5. Sort the inventors by years lived
 
