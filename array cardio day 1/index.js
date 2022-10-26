@@ -82,7 +82,7 @@ console.log(fullname);
   }
   console.log(total);
 
-//   2nd way using reduce function
+//  2nd way using reduce function
   const totalYear = inventors.reduce((total, inventor) => {
     return total + inventor.passed - inventor.year;
   }, 0);
