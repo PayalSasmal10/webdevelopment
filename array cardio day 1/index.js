@@ -82,8 +82,11 @@ console.log(fullname);
   }
   console.log(total);
 
-//   2nd way
-
+//   2nd way using reduce function
+  const totalYear = inventors.reduce((total, inventor) => {
+    return total + inventor.passed - inventor.year;
+  }, 0);
+  console.log(totalYear);
 
   // 5. Sort the inventors by years lived
 
