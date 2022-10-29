@@ -18,8 +18,8 @@ html{
     box-sizing: border-box;
     text-align: center;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    max-width: 100vw;
-    max-height: 100vh;
+    /* max-width: 100vw; */
+    min-height: 100vh;
 }
 
 @media only screen and (max-width: 780px){
